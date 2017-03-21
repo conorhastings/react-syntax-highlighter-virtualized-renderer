@@ -1,6 +1,6 @@
 {
   "name": "react-syntax-highlighter-virtualized-renderer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a virtualized custom renderer for react syntax highlighter",
   "main": "dist/index.js",
   "scripts": {
