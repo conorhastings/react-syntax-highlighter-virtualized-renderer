@@ -1,6 +1,6 @@
 ## React Syntax Highlighter Virtualized Renderer
 
-<a href='https://github.com/conorhastings/react-syntax-highlighter'>React Syntax Highlighter</a> allows for the use of custom renderers to change the behavior of the way the syntax highlighted code is rendered. This module utilizes <a href="https://github.com/bvaughn/react-virtualized">React Virtualized</a> to virtualize rendering of non visible code nodes to allow for better performance when syntax highlighting large blocks. 
+<a href='https://github.com/conorhastings/react-syntax-highlighter'>React Syntax Highlighter</a> allows for the use of custom renderers to change the behavior of the way the syntax highlighted code is rendered. This module utilizes <a href="https://github.com/bvaughn/react-virtualized">React Virtualized</a> to virtualize rendering of non visible code nodes to allow for better performance when syntax highlighting large blocks. See an example: <a href="http://conor.rodeo/react-syntax-highlighter/demo/virtualized.html">here</a>
 
 ### Use
 
