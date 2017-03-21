@@ -14,7 +14,7 @@ function rowRenderer({ rows, stylesheet, useInlineStyles }, { index, key, style 
 
 export default function virtualizedRenderer({ overscanRowCount = 10 }) {
   return ({ rows, stylesheet, useInlineStyles }) => (
-    <div>
+    <div style={{height: "100%"}}>
       <AutoSizer>
         {({ height, width }) => (
           <List
