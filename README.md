@@ -19,11 +19,15 @@ const Component = () => {
 	<SyntaxHighlighter 
 	  language='javascript' 
 	  style={docco}
-	  renderer={virtualizedRenderer}
+	  renderer={virtualizedRenderer()}
   	>
   		{codeString}
   	</SyntaxHighlighter> 
   );
 }
 ```
+
+### Optional Options Argument
+* overscanRowCount - number of rows to render ahead of what is currently visible. (defaults to 10)
+* rowHeight - if you use different fonts / line height styles, you made need to adjust the row height (defaults to 15)
 

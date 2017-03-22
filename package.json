@@ -17,7 +17,7 @@
   "author": "Conor Hastings",
   "license": "MIT",
   "dependencies": {
-    "react-syntax-highlighter": "^5.1.1",
+    "react-syntax-highlighter": "^5.1.2",
     "react-virtualized": "^9.3.0"
   },
   "devDependencies": {

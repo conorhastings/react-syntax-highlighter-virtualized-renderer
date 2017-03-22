@@ -12,7 +12,7 @@ function rowRenderer({ rows, stylesheet, useInlineStyles }, { index, key, style 
   });
 }
 
-export default function virtualizedRenderer({ overscanRowCount = 10 }) {
+export default function virtualizedRenderer({ overscanRowCount = 10, rowHeight = 15 } = {}) {
   return ({ rows, stylesheet, useInlineStyles }) => (
     <div style={{height: "100%"}}>
       <AutoSizer>
@@ -20,7 +20,7 @@ export default function virtualizedRenderer({ overscanRowCount = 10 }) {
           <List
             height={height}
             width={width}
-            rowHeight={15}
+            rowHeight={rowHeight}
             rowRenderer={rowRenderer.bind(null, { rows, stylesheet, useInlineStyles })}
             rowCount={rows.length}
             overscanRowCount={overscanRowCount}
