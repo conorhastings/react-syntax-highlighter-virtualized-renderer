@@ -12,7 +12,7 @@ npm install react-syntax-highlighter-virtualized-renderer --save
 ```js
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import virtualizedRenderer from 'react-syntax-highlighter-virtualized-renderer'; 
-import { docco } from 'react-syntax-highlighter/dist/styles';
+import { docco } from 'react-syntax-highlighter/styles/hljs';
 const Component = () => {
   const codeString = '(num) => num + 1';
   return (
