@@ -12,7 +12,12 @@ function rowRenderer({ rows, stylesheet, useInlineStyles }) {
   });
 }
 
-export default function virtualizedRenderer({ overscanRowCount = 10, rowHeight = 15 } = {}) {
+export default function virtualizedRenderer({
+  overscanRowCount = 10,
+  rowHeight = 15,
+  scrollToIndex = null,
+  scrollToAlignment = 'center',
+} = {}) {
   return ({ rows, stylesheet, useInlineStyles }) => (
     <div style={{ height: '100%' }}>
       <AutoSizer>
@@ -24,6 +29,8 @@ export default function virtualizedRenderer({ overscanRowCount = 10, rowHeight =
             rowRenderer={rowRenderer({ rows, stylesheet, useInlineStyles })}
             rowCount={rows.length}
             overscanRowCount={overscanRowCount}
+            scrollToIndex={scrollToIndex}
+            scrollToAlignment={scrollToAlignment}
           />
         )}
       </AutoSizer>
